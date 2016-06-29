@@ -12,7 +12,7 @@ $(".searchBox").keypress(function(e){
     var input = $(".searchBox").val();
     wikiSearch(input);
   }
-})
+});
  
 var wikiSearch = function(input) {
   $.getJSON(url+input+"&callback=?", function(data) {
